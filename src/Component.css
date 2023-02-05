@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+
+#my-component {
+    background-color: white;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 4px 4px 30px 4px #DCDDFC;
+}
+
+.my-title-component {
+    color: #535353;
+    font-size: 16px;
+    font-family: 'Inter', serif;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: fit-content;
+    padding-bottom: 10px;
+    margin: 0;
+}
+
+.my-title-component svg {
+    margin: 0 5px;
+}
+
+.my-title-component p {
+    margin-left: 5px;
+}
+
+.recharts-tooltip-wrapper {
+    display: none;
+}

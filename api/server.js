@@ -3,6 +3,8 @@ const app = express();
 const cors = require('cors')
 app.use(cors())
 
+/* les routes pour les URL racine ("/") et "/data". Lorsque ces URL sont appelées,
+   le serveur renvoie respectivement la chaîne "Hello from Express!" et un tableau de données JSON. */
 app.get('/', (req, res) => {
     res.send('Hello from Express!');
 });
@@ -58,6 +60,7 @@ app.get('/data', (req, res) => {
     res.json(data)
 });
 
+/* démarre le serveur en écoutant les requêtes sur le port 3000 */
 app.listen(3000, () => {
     console.log('Express server is listening on port 3000');
 });
